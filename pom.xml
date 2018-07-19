@@ -9,7 +9,7 @@
 
   <profiles>
     <profile>
-      <id>osx-x86_64-cpu</id>
+      <id>osx-x86_64</id>
       <activation>
         <os>
           <family>mac</family>
@@ -17,24 +17,18 @@
         </os>
       </activation>
       <properties>
-        <platform>osx-x86_64-cpu</platform>
+        <platform>osx-x86_64</platform>
       </properties>
     </profile>
     <profile>
-      <id>linux-x86_64-cpu</id>
+      <id>linux-x86_64</id>
       <activation>
         <os>
           <family>linux</family>
         </os>
       </activation>
       <properties>
-        <platform>linux-x86_64-cpu</platform>
-      </properties>
-    </profile>
-    <profile>
-      <id>linux-x86_64-gpu</id>
-      <properties>
-        <platform>linux-x86_64-gpu</platform>
+        <platform>linux-x86_64</platform>
       </properties>
     </profile>
   </profiles>
