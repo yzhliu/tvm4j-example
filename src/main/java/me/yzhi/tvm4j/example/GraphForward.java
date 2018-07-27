@@ -3,6 +3,7 @@ package me.yzhi.tvm4j.example;
 import ml.dmlc.tvm.Module;
 import ml.dmlc.tvm.NDArray;
 import ml.dmlc.tvm.TVMContext;
+import ml.dmlc.tvm.contrib.GraphModule;
 import ml.dmlc.tvm.contrib.GraphRuntime;
 
 import java.io.File;
@@ -20,7 +21,7 @@ public class GraphForward {
 
     TVMContext ctx = TVMContext.cpu();
 
-    GraphRuntime.GraphModule graph = GraphRuntime.create(graphJson, libmod, ctx);
+    GraphModule graph = GraphRuntime.create(graphJson, libmod, ctx);
 
     graph.loadParams(params).setInput("data", RandomInput()).run();
 
